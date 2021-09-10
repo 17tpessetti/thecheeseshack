@@ -1,0 +1,193 @@
+/*Color Codes
+Yellow: #ffb400
+Light blue: #628395
+Orange: #F6511D
+White: F2F5FF
+*/
+
+/*This is all for the nav*/
+
+
+.skip a{
+  background: white;
+  left: 0;
+  padding: 6px;
+  position: absolute;
+  top: -40px;
+  z-index: 1;
+}
+
+.skip a:focus{
+/*Add the selector and rule to move the skip link to the exact top.*/
+  top: 0px;
+}
+
+body {
+  font-family: "Azeret Mono", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/*Basic stuff for the whole site*/
+
+.body {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #628395;
+}
+
+.container{
+  background-color: #BBDEF0;
+}
+
+.page-header{
+    text-align: center;
+    padding: 30px 30px 30px 30px;
+    background-color: #ffb400;
+    margin: 0px 0px 0px 0px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-family: "Azeret Mono";
+    font-size: 15pt;
+    color: #F2F5FF;
+}
+
+.page-card{
+    text-align: center;
+    padding: 40px 30px 40px 30px;
+    background-color: white;
+    margin: 30px 30px 30px 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-size: 12pt;
+    color:rgb(65, 65, 65);
+}
+
+h1{
+  margin: 10px 0px 5px 0px;
+  font-size: 2em;
+  font-weight: bold;
+  
+}
+
+.headerp{
+  margin: 10px 0px 10px 0px;
+  font-family: "Calibri", sans-serif;
+  font-size: 16pt;
+}
+
+h2{
+    font-weight: bold;
+    color: #00274C;
+    font-size: 22pt;
+    font-family: "Azeret Mono";
+    margin-bottom: 20px;
+}
+
+#story{
+  margin-bottom: 10px;
+}
+
+p{
+  font-family: "Calibri", sans-serif;
+    font-weight: lighter;
+    line-height: 1.33;
+}
+
+.footer{
+    padding: 20px 0px 20px 0px;
+    color: white;
+    text-align: center;
+    background-color: #ffb400;
+}
+
+.footer-logo{
+  padding: 0px 10px 0px 10px;
+}
+
+.footer-description{
+  margin: 12px 0px 0px 0px;
+}
+
+.footer-title{
+  padding: 0px 0px 0px 0px;
+  margin: 7px 0px 16px 0px;
+  font-size: 16pt;
+}
+
+/*Founders photos*/
+.headshot-img{
+  text-align: center;
+  margin: 15px 0px 25px 0px;
+}
+
+.headshot-img img{
+  height: 200px;
+  width: auto;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+  0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.officer-card{
+  margin: 25px 0px 0px 0px;
+  padding: 20px 0px 5px 0px;
+  color: white;
+  background-color: #fc693d;
+  font-size: 24px;
+}
+
+#officer-grid{
+  margin-bottom: 40px;
+}
+
+@media sscreen and (min-width: 500px){
+}
+
+
+@media screen and (min-width: 850px){
+  #officer-grid{
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    grid-template-rows: auto;
+    grid-column-gap: 20px;
+    justify-content: center;
+  }
+
+  .officer-card{
+    padding: 30px 10px 30px 10px;
+    margin: 0px 0px 0px 0px;
+  }
+
+}
+
+
+@media screen and (min-width: 1200px){
+  .headshot-img img{
+    height: 325px;
+    width: auto;
+  }
+
+}
+
+@media screen and (prefers-reduced-motion: reduce){
+  html{
+    scroll-behavior: initial;
+}
+
+.skip a{
+  background: white;
+  left: 0;
+  padding: 6px;
+  position: absolute;
+  top: -40px;
+  -webkit-transition: none;
+  transition: none;
+  z-index: 1;
+}
+
+.skip a:focus{
+  top:0;
+}
+}
